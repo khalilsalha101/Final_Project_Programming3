@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Final_Project_Phase2.View_Book_UserController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="buttonsearch" mnemonicParsing="false" onAction="#buttonsearchHandle" style="-fx-background-color: #5cb85c;" text="Search" textFill="WHITE" />
+                  <TextField fx:id="txtsearch" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="265.0" prefWidth="600.0">
+               <children>
+                  <TableView fx:id="tableviewbook" prefHeight="233.0" prefWidth="293.0">
+                    <columns>
+                      <TableColumn fx:id="tcisbn" prefWidth="75.0" text="ISBN" />
+                      <TableColumn fx:id="tcbookname" prefWidth="75.0" text="Book Name" />
+                        <TableColumn fx:id="tcauther" prefWidth="70.0" text="Auther" />
+                        <TableColumn fx:id="tctypename" prefWidth="73.0" text="Type Name" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="130.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Button fx:id="buttonshow" mnemonicParsing="false" onAction="#buttonshowHandle" style="-fx-background-color: #5bc0de;" text="show data" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonhome" mnemonicParsing="false" onAction="#buttonhomeHandle" style="-fx-background-color: #0080ff;" text="Back To Home" textFill="#fdffff" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>
